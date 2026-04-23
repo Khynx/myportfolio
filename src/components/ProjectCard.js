@@ -16,16 +16,12 @@ export default function ProjectCard({ project }) {
         </div>
 
         <div className="project-links">
-          {project.liveUrl && project.liveUrl !== "#" && (
-            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Live Demo
-            </a>
-          )}
-          {project.githubUrl && project.githubUrl !== "#" && (
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              View Code
-            </a>
-          )}
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Live Demo
+          </a>
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            View Code
+          </a>
         </div>
       </div>
     </div>
