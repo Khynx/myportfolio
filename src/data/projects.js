@@ -3,7 +3,7 @@ export const initialProjects = [
     id: 1,
     title: "PDAO System",
     description: "An online information system designed for the Persons with Disability Affairs Office (PDAO) to efficiently manage records, monitor services, and streamline operations for persons with disabilities across the district.",
-    technologies: ["Python", "Flask", "MongoDB", "REST API", "HTML/CSS"],
+    technologies: ["MySQL", "Express.js", "React", "Node.js", "REST API", "HTML/CSS"],
     imageUrl: "/images/projects/pdao-system.png",
     liveUrl: "https://pdao-system.vercel.app/login",
     githubUrl: "https://github.com/Khynx/pdao_system"
@@ -21,7 +21,7 @@ export const initialProjects = [
     id: 3,
     title: "Booking System",
     description: "A hotel front desk booking system designed to digitize reservations, improve data management, and streamline daily front desk operations.",
-    technologies: ["PyQtS", "Python", "SQLite"],
+    technologies: ["PyQt5", "Python", "SQLite", "Kivy"],
     imageUrl: "/images/projects/booking-system.png",
     liveUrl: "#",
     githubUrl: "#"
