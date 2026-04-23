@@ -5,8 +5,8 @@ export const initialProjects = [
     description: "An online information system designed for the Persons with Disability Affairs Office (PDAO) to efficiently manage records, monitor services, and streamline operations for persons with disabilities across the district.",
     technologies: ["Python", "Flask", "MongoDB", "REST API", "HTML/CSS"],
     imageUrl: "/images/projects/pdao-system.png",
-    liveUrl: "#",
-    githubUrl: "#"
+    liveUrl: "https://pdao-system.vercel.app/login",
+    githubUrl: "https://github.com/Khynx/pdao_system"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const initialProjects = [
     technologies: ["Python", "MongoDB"],
     imageUrl: "/images/projects/payroll-system.png",
     liveUrl: "#",
-    githubUrl: "#"
+    githubUrl: "https://github.com/Kenneth-4/PayRoll"
   },
   {
     id: 3,
