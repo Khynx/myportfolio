@@ -30,10 +30,11 @@ export default function AddProjectModal({ isOpen, onClose, onAddProject }) {
 
       const reader = new FileReader();
       reader.onloadend = () => {
+        // Store the file for upload and show a preview
         setFormData(prev => ({
           ...prev,
           imageFile: file,
-          imagePreview: reader.result
+          imagePreview: reader.result  // For preview only
         }));
       };
       reader.readAsDataURL(file);
@@ -48,12 +49,20 @@ export default function AddProjectModal({ isOpen, onClose, onAddProject }) {
       return;
     }
 
+    if (!formData.liveUrl.trim() || !formData.githubUrl.trim()) {
+      alert('Please provide both Live Demo URL and GitHub URL');
+      return;
+    }
+
+    // Use placeholder if no image, or imagePreview if available
+    const imageUrl = formData.imagePreview || 'https://via.placeholder.com/400x300?text=Project';
+
     const newProject = {
       id: Date.now(),
       title: formData.title.trim(),
       description: formData.description.trim(),
       technologies: formData.technologies.split(',').map(tech => tech.trim()).filter(t => t),
-      imageUrl: formData.imagePreview || 'https://via.placeholder.com/400x300?text=Project',
+      imageUrl: imageUrl,
       liveUrl: formData.liveUrl.trim(),
       githubUrl: formData.githubUrl.trim()
     };

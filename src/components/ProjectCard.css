@@ -88,6 +88,17 @@
   background: #e8e8e8;
 }
 
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #cccccc !important;
+  color: #666 !important;
+}
+
+.btn:disabled:hover {
+  background: #cccccc !important;
+}
+
 @media (max-width: 768px) {
   .project-links {
     flex-direction: column;
