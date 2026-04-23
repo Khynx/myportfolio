@@ -12,7 +12,7 @@ export const initialProjects = [
     id: 2,
     title: "Payroll System",
     description: "A payroll application that monitors employee working hours, computes salaries, and distributes payslips via email, built using Python with MongoDB as the database.",
-    technologies: ["Python", "MongoDB"],
+    technologies: ["Python", "MongoDB", "Figma"],
     imageUrl: "/images/projects/payroll-system.png",
     liveUrl: "#",
     githubUrl: "https://github.com/Kenneth-4/PayRoll"
