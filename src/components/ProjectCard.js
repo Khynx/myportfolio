@@ -27,3 +27,6 @@ export default function ProjectCard({ project }) {
     </div>
   );
 }
+
+console.log(project.liveUrl);
+console.log(project.githubUrl);
