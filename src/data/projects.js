@@ -5,7 +5,7 @@ export const initialProjects = [
     description: "An online information system designed for the Persons with Disability Affairs Office (PDAO) to efficiently manage records, monitor services, and streamline operations for persons with disabilities across the district.",
     technologies: ["MySQL", "Express.js", "React", "Node.js", "REST API", "HTML/CSS"],
     imageUrl: "/images/projects/pdao-system.png",
-    liveUrl: "https://pdao-system.vercel.app/login",
+    liveUrl: "#",
     githubUrl: "https://github.com/Khynx/pdao_system"
   },
   {
